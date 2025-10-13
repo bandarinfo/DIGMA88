@@ -33,6 +33,32 @@
     position: relative;
     z-index: 2;
   }
+  <style>
+  /* --- HEWAN LUCU --- */
+  .pet {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    pointer-events: none; /* biar tidak ganggu klik tombol */
+    animation: bounce 1.5s infinite;
+    transition: transform 2s ease, left 2s ease, top 2s ease;
+  }
+
+  .pet img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.7));
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
 
   /* LOGO UTAMA */
   .logo {
@@ -181,7 +207,7 @@
   </div>
 
   <!-- LOGO -->
-  <img src="https://i.ibb.co/N26SJQKG/logo.webp" alt="Logo OPELGAMING" class="logo">
+  <img src="https://usermagecia88.pages.dev" alt="Logo BANDARTOTO" class="logo">
 
   <!-- JUDUL -->
   <h1>LINK LOGIN ALTERNATIF OPELGAMING</h1>
@@ -219,6 +245,9 @@
     </div>
     <img src="https://img.icons8.com/ios-glyphs/30/ffffff/share.png" class="share" alt="Share">
   </a>
+
+  <!-- TAMBAHKAN GAMBAR DI SINI -->
+      <img src="https://i.ibb.co/20nMgbSM/info-terbaru.webp" alt="Gambar Contoh" width="425">
 </div>
 
 <!-- FOOTER -->
